@@ -578,6 +578,7 @@ margin-bottom: 0;
 
 .hero-section .btn {
   margin-top: 3em;
+  background-color: #ffffff01;
   border: solid 2px #ffffffac;
   border-radius: 60px;
   height: 3em;
@@ -944,19 +945,51 @@ blockquote {
 /*---------------------------------------
   FAQs              
 -----------------------------------------*/
-.carousel-item::before {
-  content: '';
+/* 自加 */
+.carousel-inner,.works-carousel {
+  /* border: 3px solid coral; */
+  border-radius: var(--border-radius-medium);
+  overflow: hidden;
+  height: 100%;
+  margin-top: 24px;
+}
+
+.works-carousel .owl-dots{
+  position: absolute;
+
+}
+
+.bk-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* 黑色半透明 */
-  z-index: 1;
+  /* 從下到上的漸層 */
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.15)0%, rgba(0, 0, 0, 0)30%,rgba(0, 0, 0, 0)100%); 
+  /* background-color: #d62424;  */
+  /* border: 3px coral solid; */
+  z-index: 3;
+}
+.bk-overlay:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+  
+}
+/* hover時微圖片微放大 */
+.works-carousel .carousel-item img{
+  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); /* 使用平滑的 Bezier 函數 */
+}
+.works-carousel .carousel-item:hover img{
+  transform: scale(1.05); /* 放大 1.05 倍 */
 }
 
 
 
+
+.faq-section{
+  background-color: var(--section-bg-color);
+  padding-top: 50px;
+}
 
 .faq-section .accordion-item {
   border: 0;
