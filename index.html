@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Topic Listing Bootstrap 5 Template</title>
+    <title>mama web</title>
 
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,7 +42,7 @@ https://templatemo.com/tm-590-topic-listing
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <!-- 主logo -->
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="#top">
                     <i class="bi-back"></i>
                     <span>Topic</span>
                 </a>
@@ -283,62 +283,7 @@ https://templatemo.com/tm-590-topic-listing
                                 aria-labelledby="design-tab" tabindex="0">
                                 <div class="row">
                                     <!-- 原卡片 -->
-                                    <!-- <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
-                                        <div class="custom-block bg-white shadow-lg">
-                                            <a href="topics-detail.html">
-                                                <div class="d-flex">
-                                                    <div>
-                                                        <h5 class="mb-2">Web Design</h5>
-
-                                                        <p class="mb-0">Topic Listing Template based on Bootstrap 5</p>
-                                                    </div>
-
-                                                    <span class="badge bg-design rounded-pill ms-auto">14</span>
-                                                </div>
-
-                                                <img src="images/topics/undraw_Remote_design_team_re_urdx.png"
-                                                    class="custom-block-image img-fluid" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
-                                        <div class="custom-block bg-white shadow-lg">
-                                            <a href="topics-detail.html">
-                                                <div class="d-flex">
-                                                    <div>
-                                                        <h5 class="mb-2">Graphic</h5>
-
-                                                        <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                    </div>
-
-                                                    <span class="badge bg-design rounded-pill ms-auto">75</span>
-                                                </div>
-
-                                                <img src="images/topics/undraw_Redesign_feedback_re_jvm0.png"
-                                                    class="custom-block-image img-fluid" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4 col-md-6 col-12">
-                                        <div class="custom-block bg-white shadow-lg">
-                                            <a href="topics-detail.html">
-                                                <div class="d-flex">
-                                                    <div>
-                                                        <h5 class="mb-2">Logo Design</h5>
-
-                                                        <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                                                    </div>
-
-                                                    <span class="badge bg-design rounded-pill ms-auto">100</span>
-                                                </div>
-
-                                                <img src="images/topics/colleagues-working-cozy-office-medium-shot.png"
-                                                    class="custom-block-image img-fluid" alt="">
-                                            </a>
-                                        </div>
-                                    </div> -->
+                                    
 
                                     <!-- 可滑動卡片 -->
                                     <div class="owl-carousel first-carousel owl-theme">
@@ -708,27 +653,44 @@ https://templatemo.com/tm-590-topic-listing
 
         <!-- 案例輪播區 -->
         <section class="faq-section section-padding" id="section_4">
-            <div class="container">
+            <div class="container px-5">
 
-                <!-- owl one -->
+                <!-- 輪播owl one -->
                 <div class="owl-carousel works-carousel owl-theme ">
 
                     <!-- 第一張 -->
                     <a class="  item carousel-item active " href="">
-                        <img src="images/w1440x400.png" class="d-block w-100" alt="...">
+                        <picture>
+                            <!-- 畫面寬度大於1200px時使用此圖片 -->
+                            <source media="(min-width: 992px)" srcset="images/w1440x400.png">
+                            <!-- 畫面寬度介於600px到1200px時使用此圖片 -->
+                            <source media="(min-width: 481px)" srcset="images/w980x400.png">
+                            <!-- 畫面寬度小於600px時使用此圖片 -->
+                            <source media="(max-width: 480px)" srcset="images/w480x400.png">
+                            <!-- 預設的圖片 -->
+                            <img src="images/w1440x400.png" alt="精彩案例圖片">
+                            <!-- <img src="images/w1440x400.png" class="d-block w-100" alt="..."> -->
+                        </picture>
                         <div class="carousel-caption d-none d-md-block">
                             <h5>First slide label</h5>
                             <p>Some representative placeholder content for the first slide.</p>
                         </div>
                         <div class="bk-overlay"></div>
                     </a>
-
-
 
                     <!-- 第二張 -->
                     <a class=" item carousel-item active " href="">
-                        <img src="images/w1440x400.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
+                        <picture>
+                        <!-- 畫面寬度大於1200px時使用此圖片 -->
+                        <source media="(min-width: 992px)" srcset="images/w1440x400.png">
+                        <!-- 畫面寬度介於600px到1200px時使用此圖片 -->
+                        <source media="(min-width: 481px)" srcset="images/w980x400.png">
+                        <!-- 畫面寬度小於600px時使用此圖片 -->
+                        <source media="(max-width: 480px)" srcset="images/w480x400.png">
+                        <!-- 預設的圖片 -->
+                        <img src="images/w1440x400.png" alt="精彩案例圖片">
+                        <!-- <img src="images/w1440x400.png" class="d-block w-100" alt="..."> -->
+                    </picture>                        <div class="carousel-caption d-none d-md-block">
                             <h5>Second slide label</h5>
                             <p>Some representative placeholder content for the first slide.</p>
                         </div>
@@ -736,59 +698,35 @@ https://templatemo.com/tm-590-topic-listing
                     </a>
                 </div>
 
-
-            </div>
-
-
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel"><!-- 自動播放 -->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <!-- 內容 -->
-                <div class=" carousel-inner ">
-                    <!-- 第一張 -->
-                    <a class=" carousel-item active " href="">
-                        <img src="images/w1440x560.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                        </div>
-                        <div class="bk-overlay"></div>
+                <div class="row g-2">
+                    <a class="work-theme  col-lg-3 col-md-4 col-6 " herf=""> 
+                        <div><img src="./images/colleagues-working-cozy-office-medium-shot.jpg" alt="works" ></div>
+                        <h6>123</h6>
                     </a>
-
-
-                    <!-- 第二張 -->
-                    <div class=" carousel-item">
-                        <img src="images/w1440x560.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                        </div>
+                    <div class="work-theme  col-lg-3 col-md-4 col-6 "> 
+                        <div><img src="./images/colleagues-working-cozy-office-medium-shot.jpg" alt="works" ></div>
+                        <h6>123</h6>
+                    </div>
+                    <div class="work-theme  col-lg-3 col-md-4 col-6 "> 
+                        <div><img src="./images/colleagues-working-cozy-office-medium-shot.jpg" alt="works" ></div>
+                        <h6>123</h6>
+                    </div>
+                    <div class="work-theme  col-lg-3 col-md-4 col-6 "> 
+                        <div><img src="./images/colleagues-working-cozy-office-medium-shot.jpg" alt="works" ></div>
+                        <h6>123</h6>
                     </div>
 
-
-
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+
+
             </div>
+
             
+
+
         </section>
 
-
+        <!-- 聯絡 -->
         <!-- <section class="contact-section section-padding section-bg" id="section_5">
             <div class="container">
                 <div class="row">
@@ -857,7 +795,7 @@ https://templatemo.com/tm-590-topic-listing
         </section> -->
     </main>
 
-    <footer class="site-footer section-padding">
+    <footer class="site-footer section-padding"  id="section_5">
         <div class="container">
             <div class="row">
 

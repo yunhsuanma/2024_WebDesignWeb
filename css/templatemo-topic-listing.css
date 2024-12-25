@@ -943,7 +943,7 @@ blockquote {
 
 
 /*---------------------------------------
-  FAQs              
+  FAQs    精彩案例           
 -----------------------------------------*/
 /* 自加 */
 .carousel-inner,.works-carousel {
@@ -956,7 +956,10 @@ blockquote {
 
 .works-carousel .owl-dots{
   position: absolute;
-
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+z-index: 10;
 }
 
 .bk-overlay {
@@ -972,8 +975,8 @@ blockquote {
   z-index: 3;
 }
 .bk-overlay:hover{
-  background-color: rgba(0, 0, 0, 0.2);
-  
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.18)0%, rgba(0, 0, 0, 0.01)40%,rgba(0, 0, 0, 0)100%);
 }
 /* hover時微圖片微放大 */
 .works-carousel .carousel-item img{
@@ -981,6 +984,49 @@ blockquote {
 }
 .works-carousel .carousel-item:hover img{
   transform: scale(1.05); /* 放大 1.05 倍 */
+}
+
+
+/* 四格 */
+.work-theme div{
+  /* height: 11rem; */
+  /* border: solid coral; */
+  /* padding: 0; */
+  overflow: hidden;
+  border-radius: var(--border-radius-small);
+  margin-bottom: 0.5rem;
+
+}
+
+.faq-section .container{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.faq-section .row{
+  padding-top: 1rem;
+  /* margin: 0; */
+  /* gap: 0.5rem;  */
+}
+
+.work-theme img{
+  /* border-radius: var(--border-radius-small); */
+  width: 100%;
+  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); /* 使用平滑的 Bezier 函數 */
+
+}
+
+.work-theme:hover img{
+  transform: scale(1.05);
+
+}
+
+.work-theme h6{
+margin-bottom: 0.1rem;
+}
+
+h6~p{
+  font-size: medium;
+  margin-top: 0rem;
 }
 
 
